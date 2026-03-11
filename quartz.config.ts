@@ -16,8 +16,8 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "zh-CN",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "metaphor-xennon.pages.dev",
+    ignorePatterns: ["private", "templates", ".obsidian", "assets"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
