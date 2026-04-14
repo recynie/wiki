@@ -24,21 +24,7 @@ The following directories are **ignored** during publishing (defined in quartz c
 
 > **Note**: Files in these directories will not appear in the published site.
 
----
-
-## 2. Content Organization
-
-```
-/home/aroma/Documents/ob/base/
-├── wiki/           # Main knowledge base (CCF-CSP, algorithms, data structures, etc.)
-├── blogs/          # Blog posts (more polished, longer-form content)
-├── courses/       # Course notes
-├── tools/         # Tool configurations and cheatsheets
-├── prompts4agent/  # Agent instructions and scaffolds
-└── ...
-```
-
-### Directory Naming
+### Directory & File Naming
 - Use **kebab-case** for directory names: `breadth-first-search/`, `monotonous-stack/`
 - One topic per directory; files within represent subtopics or related content
 
@@ -62,7 +48,7 @@ permalink:
 ```
 
 ### Rules
-- `title`: Chinese preferred for Chinese content; English for English content
+- `title`: Basically, Chinese preferred for Chinese content; English for English content. Do not use bilingual title. Keep title short and clear. English terms are ok if their translations are not commonly used.
 - `date`: Date of creation or major revision
 - `description`: One-line summary
 - `tags`: Lowercase kebab-case, 1-3 most relevant tags
@@ -90,10 +76,10 @@ permalink:
 
 Use Obsidian-style wiki links for internal navigation:
 
-| Pattern | Meaning |
-|---------|---------|
-| `[[path|Display Text]]` | Link to file with custom display text |
-| `[[path]]` | Link using filename as display text |
+| Pattern    | Meaning                             |                                       |
+| ---------- | ----------------------------------- | ------------------------------------- |
+| `[[path    | Display Text]]`                     | Link to file with custom display text |
+| `[[path]]` | Link using filename as display text |                                       |
 
 ### Path Resolution
 - Relative to current file's directory
@@ -169,9 +155,11 @@ Use superscript footnotes for references:
 
 ```markdown
 BFS和DFS是图搜索中最基础的算法。[^1]
+```
+
+**脚注放置位置**：脚注内容应放在相应段落的**正后方**（而非文件末尾的单独章节）。这样在阅读 md 源文件时可以快速看到脚注内容，在网页渲染时脚注会自动聚集到页面底部。[^1]
 
 [^1]: 本段来自[BFS（图论） - OI Wiki](https://oi-wiki.org/graph/bfs)
-```
 
 ---
 
