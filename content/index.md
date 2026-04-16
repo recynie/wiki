@@ -10,6 +10,8 @@ permalink:
 - 使用[Quartz 4](https://quartz.jzhao.xyz/)构建
 - 基于[Obsidian](https://obsidian.md/)的知识库
 
+本wiki站点的大部分内容由agent完善和添加，类似于Karpathy的LLM wiki思路。
+
 目前，内容主要包括
 
 ## 算法与数据结构
