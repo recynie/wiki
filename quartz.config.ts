@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "metaphor-xennon.pages.dev",
-    ignorePatterns: ["private", "templates", ".obsidian", "assets", "AGENTS.md"],
+    ignorePatterns: ["private", "templates", ".obsidian", "assets", "AGENTS.md",".pi"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
